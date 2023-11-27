@@ -43,7 +43,7 @@ const Registration = () => {
 
     try {
       // Send the data to the server using Axios or another method
-      const response = await axios.post("http://localhost:4000/users", {
+      const response = await axios.post("http://127.0.0.1:3001/register", {
         username: username,
         email: email,
         password: password,
@@ -61,10 +61,8 @@ const Registration = () => {
       confirmButtonText: 'OK',
     });
 
-    if (result.isConfirmed) {
-      // Redirect to the home page or perform any other action
-      window.location.href = "/Login";
-    }
+      // window.location.href = "/Login";
+    
     } catch (error) {
       setError("An error occurred during registration: " + error.message);
     }
