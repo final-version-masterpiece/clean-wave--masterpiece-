@@ -18,6 +18,16 @@ const Categores = () => {
 
 
  
+
+    <>
+    
+   <Cate1/>
+   <Cate2/>
+   <Cate3/>
+   <Button/>
+
+    </>
+
   );
 };
 

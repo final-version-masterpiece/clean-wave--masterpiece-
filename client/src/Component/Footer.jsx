@@ -14,6 +14,7 @@ const Footer = () => {
                   <span
                     id="Clean"
                     className="font-semibold text-xl tracking-tight text-blue-700"
+                    className="font-semibold text-xl tracking-tight"
                   >
                     CleanWave
                   </span>
@@ -29,6 +30,10 @@ const Footer = () => {
                 The best site to book your<br></br> home cleaning service.
                 </p>
                 <div className="flex mt-8 space-x-6 text-blue-700">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptas, accusantium.
+                </p>
+                <div className="flex mt-8 space-x-6 text-gray-600">
                   <a
                     className="hover:opacity-75"
                     href=""
@@ -94,6 +99,10 @@ const Footer = () => {
                     <Link className="hover:opacity-75" to="/AboutUs">
                       {" "}
                       About{" "}
+                  <nav className="flex flex-col mt-4 space-y-2 text-l text-gray-500">
+                    <Link className="hover:opacity-75" to="/AboutUs">
+                      {" "}
+                      About Us{" "}
                     </Link>
                     <Link className="hover:opacity-75" to="/Categores">
                       {" "}
@@ -106,6 +115,7 @@ const Footer = () => {
                     <Link className="hover:opacity-75" to="/ContactUs">
                       {" "}
                       Contact{" "}
+                      ContactUs{" "}
                     </Link>
                   </nav>
                 </div>
@@ -114,6 +124,7 @@ const Footer = () => {
             <br></br>
             <div id="hr"></div>
             <p className="mt-8 text-base text-blue-700 text-center ">© 2023 CleanWave</p>
+            <p className="mt-8 text-base text-gray-800 text-center ">© 2023 CleanWave</p>
           </div>
         </footer>
       </>

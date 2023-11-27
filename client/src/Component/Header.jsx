@@ -33,6 +33,7 @@ const Header = () => {
       <Link to="/Profile"><img
         // src={userProfileImage}
         src = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+        src = "https://cdn-icons-png.flaticon.com/256/3135/3135789.png"
         alt="User Profile"
         className="h-8 w-auto rounded-full mr-2"
       /></Link>
@@ -61,6 +62,7 @@ const Header = () => {
         Sign Up
       </Link>
       {/* <Link to="./Admin"><button>hg</button></Link> */}
+      <Link to="./Admin"><button>hg</button></Link>
     </div>
     
   );
@@ -83,6 +85,7 @@ const Header = () => {
               <span
                 id="Cleaning"
                 className="text-blue-700 font-semibold text-xl tracking-tight"
+                className="font-semibold text-xl tracking-tight"
               >
                 CleanWave
               </span>

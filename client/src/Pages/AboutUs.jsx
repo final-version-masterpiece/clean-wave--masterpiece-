@@ -19,6 +19,7 @@ const AboutUs = () => {
           </div>
           <div className="md:7/12 lg:w-6/12">
             <h2 className="text-2xl text-gray-900 font-bold md:text-4xl"> About <span className="text-blue-500">Us</span>
+            <h2 className="text-2xl text-gray-900 font-bold md:text-4xl"> About <span className="text-blue-700">Us</span>
             </h2>
             <p className="mt-6 text-gray-600">
                 we are dedicated to providing top-notch cleaning services to make your life easier and your spaces spotless.

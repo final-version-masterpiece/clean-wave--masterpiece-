@@ -41,6 +41,10 @@ const Categories = () => {
 
   return (
     <div className="flex flex-col items-center">
+  return (
+    <div className="flex flex-col items-center">
+      <br />
+      <br />
       <div>
         <h1 className="text-3xl font-bold my-4">Hourly Cleaning</h1>
         <h3 className="text-sm text-center text-gray-600 my-6">
@@ -48,6 +52,8 @@ const Categories = () => {
           <br />
           assembling Having the most keep.
         </h3>
+        <br />
+        <br />
         <div className="flex flex-wrap justify-center gap-20">
           {cardsData.slice(0, 3).map((card, index) => (
             <div key={index} id='lala' className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
@@ -75,6 +81,11 @@ const Categories = () => {
                   id='Read' className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-blue-500 rounded-lg hover-bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-red-700 dark:focus:ring-blue-800"
                 >
                   Datiles
+                <Link
+                  to={`/Detelis/${card.id}`}
+                  id='Read' className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover-bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-red-700 dark:focus:ring-blue-800"
+                >
+                  Read more
                   <svg
                     className="w-3 h-3 ml-2"
                     aria-hidden="true"

@@ -37,6 +37,7 @@ function App() {
           <Route path="/Detelis1" element={<Detelis1/>} />
           <Route path="/Profile" element={<Profile/>} />
        
+          <Route path="/Admin" element={<Admin/>} />
           
 
         </Routes>
