@@ -29,6 +29,7 @@ const Comment = () => {
       };
 
       axios
+        .post("http://localhost:4000/message", newCommentObj)
         .post("http://localhost:4000/message$", newCommentObj)
         .then((response) => {
           setComments([...comments, response.data]);

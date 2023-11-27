@@ -26,6 +26,7 @@ const Oss  = () => {
         </div>
         <div id='k' className="py-12 px-6 max-w-xl lg:max-w-5xl lg:w-1/2">
           <h2 className="text-3xl text-gray-800 font-bold">
+           <span className="text-blue-500">Book</span> a Cleaning
            <span className="text-indigo-600">Book</span> a Cleaning
           Sevice Today
           </h2>

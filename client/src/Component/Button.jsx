@@ -7,6 +7,7 @@ function Button() {
   return (
     <div>
         <button
+        className="fixed bottom-10 right-10 p-4 rounded-full bg-blue-500 text-white hover:bg-blue-500 focus:outline-none focus:bg-blue-500"
         className="fixed bottom-10 right-10 p-4 rounded-full bg-blue-600 text-white hover:bg-blue-500 focus:outline-none focus:bg-blue-500"
         onClick={handleScrollToTop}
       >

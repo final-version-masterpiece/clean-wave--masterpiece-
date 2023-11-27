@@ -7,6 +7,8 @@ import Users from "../Admim/Users";
 import Card2 from "../Admim/Card2";
 import Categores from "../Admim/Categores";
 import Card1 from "./Card1";
+import Contact from "./Contact";
+
 
 const Admin = () => {
   const [User, setUser] = useState([]);
@@ -125,6 +127,14 @@ const Admin = () => {
                 >
                   <span className="mx-2 text-sm font-medium">Card2</span>
                 </button>
+
+                <button
+                  className="w-full flex items-center px-3 py-2 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700"
+                  onClick={() => setPage("Contact")}
+                >
+                  <span className="mx-2 text-sm font-medium">Contact</span>
+                </button>
+
               </div>
 
               <div className="space-y-3 ">
@@ -174,6 +184,11 @@ const Admin = () => {
         <div className={`${page === "Card1" ? "block" : "hidden"} w-full`}>
           <Card1 />
         </div>
+
+        <div className={`${page === "Contact" ? "block" : "hidden"} w-full`}>
+          <Contact />
+        </div>
+
       </div>
     </div>
   );

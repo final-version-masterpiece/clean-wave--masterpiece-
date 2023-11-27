@@ -36,6 +36,7 @@ function App() {
           <Route path="/BookNow" element={<BookNow/>} />
           <Route path="/Detelis1" element={<Detelis1/>} />
           <Route path="/Profile" element={<Profile/>} />
+       
           <Route path="/Admin" element={<Admin/>} />
           
 
@@ -43,6 +44,13 @@ function App() {
 
         <Footer />
       </Router>
+      {/* <Router>
+
+      <Routes> 
+
+      <Route path="/Admin" element={<Admin/>} />
+      </Routes>
+      </Router> */}
     </div>
   );
 }

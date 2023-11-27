@@ -38,6 +38,9 @@ body {
 
 #imageee{
   border-radius: 50%;
+  width: 40px;
+  height: 40px;
+
 }
 #imageeeee{
   border-radius: 50%;
@@ -57,6 +60,9 @@ body {
  /* #Heroo{
   margin-top: 100px;
 }   */
+#Email{
+margin-left: 10px;
+}
 
 body{
   background-color: white;
@@ -74,6 +80,10 @@ body{
   font-size: 28px;
   letter-spacing: 1px;
   margin-left: 14px;
+}
+
+#CCo {
+  background-color: aliceblue;
 }
 
 
@@ -120,12 +130,14 @@ footer {
   margin-top: 100px;
 }  
 
+/* #image {
 #image {
   max-width: 75%;
   height: auto;
   margin: 45px;
   border-bottom-left-radius: 5%;
  border-bottom-right-radius: 5%;
+} */
 }
 
 h5 {
@@ -133,6 +145,15 @@ h5 {
 }
 
 #l {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  background-color: ghostwhite;
+}
+
+#l:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: ghostwhite;
+
   background-color: #60a5fa;
   transition: 0.4s;
 }
@@ -159,6 +180,16 @@ h5 {
   transform: translateY(-10px);
 }
 
+* {
+
+  font-family: "Times New Roman", Times, serif;
+}
+
+#osa {
+  margin-top: -57.2px;
+}
+
+
 
 
 .keep ,h1 {
@@ -166,6 +197,7 @@ h5 {
   font-size: 30px;
 }
 #text {
+  color: black  ;
   color: white  ;
 }
 
@@ -197,6 +229,8 @@ h5 {
 .bn632-hover.bn28 {
   background-image: linear-gradient(
     to right,
+    #80d8ff,
+    #4977E5 ,
     #4977E5,
     #80d8ff ,
     #00b0ff,
@@ -248,23 +282,28 @@ h5 {
 
 #lala {
  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+ background-color: ghostwhite;
 
 }
 
 #lala:hover{
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: ghostwhite;
   background-color: #f0f0f0;
 }
 
 #lalala {
   transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  background-color: ghostwhite;
 
 }
 
 #lalala:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: ghostwhite;
+
   background-color: #f0f0f0;
 }
 
@@ -276,6 +315,7 @@ h5 {
 #lalalala:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: ghostwhite;
   background-color: #f0f0f0;
 }
 
@@ -369,6 +409,13 @@ margin-left: 26px;
   margin-top: -30px;
 }
 
+/* #koko {
+  margin-right: 100px;
+}  */
+
+/* #dffd {
+  margin-right: -100px;
+} */
 #koko {
   margin-right: 100px;
 } 
@@ -399,6 +446,7 @@ margin-left: 26px;
 } */
 
 #Read {
+  margin-left: 230px;
   margin-left: 200px;
 }
 
