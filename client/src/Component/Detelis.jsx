@@ -1,6 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link, useParams } from 'react-router-dom';
+import Swal from 'sweetalert2';
+
+const Detelis = () => {
+  const [product, setProduct] = useState({});
+  const [cart, setCart] = useState([]); // حالة لتخزين عناصر عربة التسوق
+  const { id } = useParams();
+
+  useEffect(() => {
+    axios.get(`http://localhost:4000/Sarvices/${id}`)
+      .then(response => {
+        setProduct(response.data);
 import Card from './Card';
 
 const Detelis = () => {
@@ -19,6 +30,19 @@ const Detelis = () => {
         console.error('Error fetching product details:', error);
       });
   }, [id]);
+
+  // إضافة المنتج إلى عربة التسوق
+  const addToCart = () => {
+    setCart([...cart, product]);
+
+    Swal.fire({
+      icon: 'success',
+      title: 'Successfully added to cart',
+      showConfirmButton: true,
+      timer: 5000, // Set a timer for 5 seconds (adjust as needed)
+      confirmButtonText: 'OK',
+    });
+  };
   
 
 
@@ -133,6 +157,22 @@ const Detelis = () => {
             </div>
           
           </div>
+          <div id='osa' className="flex flex-wrap items-end -mx-4 justify-end">
+          <div className="w-full px-4 mb-4 lg:w-1/2 lg:mb-0">
+            
+            <button
+          onClick={addToCart} // انقر على هذا الزر لإضافة المنتج إلى عربة التسوق
+          className="flex items-center justify-center w-full p-4 text-blue-500 border border-blue-500 rounded-md dark:text-gray-200 dark:border-blue-600 hover:bg-blue-600 hover:border-blue-600 hover:text-gray-100 dark:bg-blue-600 dark:hover:bg-blue-700 dark:hover:border-blue-700 dark:hover:text-gray-300"
+        >
+          Add to Cart
+        </button>
+
+            
+
+      </div>
+          
+          </div>
+          
         </div>
       </div>
     </div>
