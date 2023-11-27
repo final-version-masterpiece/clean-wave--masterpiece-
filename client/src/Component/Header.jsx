@@ -1,26 +1,24 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Search from "./Search";
 
 const Header = () => {
   const [isNavVisible, setNavVisible] = useState(true);
-  const [isLoggedIn, setLoggedIn] = useState(true);
+  const [isLoggedIn, setLoggedIn] = useState(false);
   const [userProfileImage, setUserProfileImage] = useState("");
-  const navigate = useNavigate();
 
   const toggleNav = () => {
     setNavVisible(!isNavVisible);
   };
 
-  const handleLogin = () => {
-    // Perform authentication logic
-    // For simplicity, let's assume successful login and set user information
-    setLoggedIn(true);
-    setUserProfileImage("https://cdn-icons-png.flaticon.com/256/3135/3135789.png");
+  // const handleLogin = () => {
+  //   // Perform authentication logic
+  //   // For simplicity, let's assume successful login and set user information
+  //   setLoggedIn(true);
+  //   setUserProfileImage("https://cdn-icons-png.flaticon.com/256/3135/3135789.png");
 
-    // Redirect to the login page
-    navigate("/Login");
-  };
+  //   // Redirect to the login page
+  // };
 
   const handleLogout = () => {
     // Perform logout logic
@@ -41,7 +39,7 @@ const Header = () => {
         User Name 
       </span> */}
       <button
-        onClick={handleLogout}
+        onClick={()=>{handleLogout()}}
         className="block text-md px-4 py-2 rounded text-blue-700 ml-2 font-bold hover:text-white mt-4 hover:bg-blue-700 lg:mt-0"
       >
         Logout
@@ -93,7 +91,7 @@ const Header = () => {
           </div>
           <div className="block lg:hidden">
             <button
-              onClick={toggleNav}
+              onClick={()=>{toggleNav()}}
               id="nav"
               className="flex items-center px-3 py-2 border-2 rounded text-blue-700 border-blue-700 hover:text-blue-700 hover:border-blue-700"
             >
